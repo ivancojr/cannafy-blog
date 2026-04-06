@@ -62,8 +62,10 @@ export function BlogHeader() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link
-              to="/"
+            <a
+              href="https://cannafy.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`hidden sm:inline-flex text-sm font-medium px-4 py-2 rounded-full transition-colors ${
                 scrolled
                   ? "bg-secondary text-white hover:bg-secondary/90"
@@ -71,7 +73,7 @@ export function BlogHeader() {
               }`}
             >
               Agendar consulta
-            </Link>
+            </a>
 
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -99,13 +101,15 @@ export function BlogHeader() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              to="/"
+            <a
+              href="https://cannafy.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="text-sm font-medium text-white bg-secondary hover:bg-secondary/90 py-2.5 px-3 rounded-lg transition-colors mt-2 text-center"
             >
               Agendar consulta
-            </Link>
+            </a>
           </nav>
         </div>
       )}

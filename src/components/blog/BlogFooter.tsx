@@ -50,12 +50,12 @@ export function BlogFooter() {
               <a href="https://cannafy.com.br" className="text-sm text-white/60 hover:text-primary transition-colors">
                 Site principal
               </a>
-              <Link to="/login" className="text-sm text-white/60 hover:text-primary transition-colors">
+              <a href="https://cannafy.com.br/login?tipo=paciente" className="text-sm text-white/60 hover:text-primary transition-colors">
                 Área do paciente
-              </Link>
-              <Link to="/" className="text-sm text-white/60 hover:text-primary transition-colors">
+              </a>
+              <a href="https://cannafy.com.br" className="text-sm text-white/60 hover:text-primary transition-colors">
                 Agendar consulta
-              </Link>
+              </a>
             </nav>
           </div>
         </div>
