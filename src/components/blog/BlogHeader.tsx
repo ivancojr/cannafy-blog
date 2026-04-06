@@ -5,11 +5,11 @@ import cannafyLogoDark from "@/assets/cannafy-logo-dark.png";
 import cannafyLogoLight from "@/assets/cannafy-logo-light.png";
 
 const NAV_LINKS = [
-  { label: "Cannabis Medicinal", href: "/blog/categoria/cannabis-medicinal" },
-  { label: "Saúde e Bem-estar", href: "/blog/categoria/saude-e-bem-estar" },
-  { label: "Tratamentos", href: "/blog/categoria/tratamentos" },
-  { label: "Legislação", href: "/blog/categoria/legislacao" },
-  { label: "Pesquisas", href: "/blog/categoria/pesquisas" },
+  { label: "Cannabis Medicinal", href: "/categoria/cannabis-medicinal" },
+  { label: "Saúde e Bem-estar", href: "/categoria/saude-e-bem-estar" },
+  { label: "Tratamentos", href: "/categoria/tratamentos" },
+  { label: "Legislação", href: "/categoria/legislacao" },
+  { label: "Pesquisas", href: "/categoria/pesquisas" },
 ];
 
 export function BlogHeader() {
@@ -32,7 +32,7 @@ export function BlogHeader() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link to="/blog" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <img
               src={scrolled ? cannafyLogoDark : cannafyLogoLight}
               alt="Cannafy Blog"

@@ -33,7 +33,7 @@ export function BlogCategorySection({
         </h2>
         {showMore && (
           <Link
-            to={`/blog/categoria/${categorySlug}`}
+            to={`/categoria/${categorySlug}`}
             className="flex items-center gap-1.5 text-sm font-medium text-secondary hover:text-secondary/80 transition-colors group"
           >
             Ver mais

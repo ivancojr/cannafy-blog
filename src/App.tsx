@@ -35,10 +35,9 @@ function App() {
           <Toaster richColors position="top-right" />
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Navigate to="/blog" replace />} />
-              <Route path="/blog" element={<BlogIndex />} />
-              <Route path="/blog/artigo/:slug" element={<BlogArticlePage />} />
-              <Route path="/blog/categoria/:category" element={<BlogCategoryPage />} />
+              <Route path="/" element={<BlogIndex />} />
+              <Route path="/artigo/:slug" element={<BlogArticlePage />} />
+              <Route path="/categoria/:category" element={<BlogCategoryPage />} />
 
               {/* CMS Routes */}
               <Route path="/cms/login" element={<Suspense fallback={<CMSLoading />}><CMSLogin /></Suspense>} />
@@ -46,7 +45,7 @@ function App() {
               <Route path="/cms/editor" element={<Suspense fallback={<CMSLoading />}><CMSEditor /></Suspense>} />
               <Route path="/cms/editor/:id" element={<Suspense fallback={<CMSLoading />}><CMSEditor /></Suspense>} />
 
-              <Route path="*" element={<Navigate to="/blog" replace />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </BrowserRouter>
         </CMSAuthProvider>

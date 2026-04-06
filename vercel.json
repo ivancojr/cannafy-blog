@@ -4,7 +4,7 @@
     { "src": "/(favicon\\.ico|favicon\\.svg|robots\\.txt|og-default\\.png)", "dest": "/$1" },
     { "src": "/api/og", "dest": "/api/og.ts" },
     {
-      "src": "/blog/artigo/(.*)",
+      "src": "/artigo/(.*)",
       "has": [{
         "type": "header",
         "key": "user-agent",

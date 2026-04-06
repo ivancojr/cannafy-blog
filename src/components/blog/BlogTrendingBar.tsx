@@ -24,7 +24,7 @@ export function BlogTrendingBar({ items }: BlogTrendingBarProps) {
             {items.map((item, index) => (
               <Link
                 key={item.slug}
-                to={`/blog/artigo/${item.slug}`}
+                to={`/artigo/${item.slug}`}
                 className="flex items-center gap-3 shrink-0 group"
               >
                 <span className="text-sm font-bold text-secondary">

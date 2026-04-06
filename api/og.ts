@@ -32,7 +32,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         title = article.title;
         description = article.excerpt || DEFAULT_DESCRIPTION;
         image = article.featured_image || DEFAULT_OG_IMAGE;
-        url = `${SITE_URL}/blog/artigo/${article.slug}`;
+        url = `${SITE_URL}/artigo/${article.slug}`;
       }
     } catch (e) {
       // Fall back to defaults

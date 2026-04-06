@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import cannafyLogoLight from "@/assets/cannafy-logo-light.png";
 
 const CATEGORIES = [
-  { label: "Cannabis Medicinal", href: "/blog/categoria/cannabis-medicinal" },
-  { label: "Saúde e Bem-estar", href: "/blog/categoria/saude-e-bem-estar" },
-  { label: "Tratamentos", href: "/blog/categoria/tratamentos" },
-  { label: "Legislação", href: "/blog/categoria/legislacao" },
-  { label: "Pesquisas", href: "/blog/categoria/pesquisas" },
+  { label: "Cannabis Medicinal", href: "/categoria/cannabis-medicinal" },
+  { label: "Saúde e Bem-estar", href: "/categoria/saude-e-bem-estar" },
+  { label: "Tratamentos", href: "/categoria/tratamentos" },
+  { label: "Legislação", href: "/categoria/legislacao" },
+  { label: "Pesquisas", href: "/categoria/pesquisas" },
 ];
 
 export function BlogFooter() {
@@ -15,7 +15,7 @@ export function BlogFooter() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <Link to="/blog" className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <img src={cannafyLogoLight} alt="Cannafy" className="h-8 w-auto" />
               <span className="text-sm font-semibold tracking-wide">Blog</span>
             </Link>

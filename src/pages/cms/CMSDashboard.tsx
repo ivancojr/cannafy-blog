@@ -74,7 +74,7 @@ export default function CMSDashboard() {
       <header className="border-b border-border bg-card">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Link to="/blog" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2">
               <CannafyIcon className="h-6 w-auto" />
               <span className="font-semibold text-lg">Cannafy</span>
             </Link>
@@ -138,7 +138,7 @@ export default function CMSDashboard() {
                     <div className="flex items-center gap-2">
                       {article.published && (
                         <Button variant="ghost" size="icon" asChild>
-                          <Link to={`/blog/artigo/${article.slug}`} target="_blank"><Eye className="h-4 w-4" /></Link>
+                          <Link to={`/artigo/${article.slug}`} target="_blank"><Eye className="h-4 w-4" /></Link>
                         </Button>
                       )}
                       <Button variant="ghost" size="icon" asChild>

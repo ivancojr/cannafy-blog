@@ -66,7 +66,7 @@ const BlogCategoryPage = () => {
         <section className="container mx-auto px-4 py-10">
           <div className="mb-8">
             <Link
-              to="/blog"
+              to="/"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-secondary transition-colors mb-4"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -119,7 +119,7 @@ const BlogCategoryPage = () => {
                 Nenhum artigo nesta categoria ainda.
               </p>
               <Link
-                to="/blog"
+                to="/"
                 className="inline-flex items-center gap-2 text-secondary hover:underline mt-4 font-medium"
               >
                 <ArrowLeft className="w-4 h-4" />

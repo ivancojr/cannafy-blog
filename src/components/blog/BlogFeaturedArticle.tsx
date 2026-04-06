@@ -28,7 +28,7 @@ export function BlogFeaturedArticle({
 
   return (
     <article className="group">
-      <Link to={`/blog/artigo/${slug}`} className="block">
+      <Link to={`/artigo/${slug}`} className="block">
         <div className="grid md:grid-cols-2 gap-6 md:gap-10">
           <div className="relative aspect-[16/10] md:aspect-[4/3] overflow-hidden rounded-3xl">
             <img
@@ -41,7 +41,7 @@ export function BlogFeaturedArticle({
 
           <div className="flex flex-col justify-center">
             <Link
-              to={`/blog/categoria/${categorySlug}`}
+              to={`/categoria/${categorySlug}`}
               onClick={(e) => e.stopPropagation()}
               className="inline-block"
             >

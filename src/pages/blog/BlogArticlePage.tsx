@@ -164,7 +164,7 @@ const BlogArticlePage = () => {
             O artigo que você procura não existe ou foi removido.
           </p>
           <Link
-            to="/blog"
+            to="/"
             className="inline-flex items-center gap-2 text-secondary hover:underline font-medium"
           >
             <FiArrowLeft className="w-4 h-4" />
@@ -276,14 +276,14 @@ const BlogArticlePage = () => {
           <div className="max-w-3xl mx-auto">
             <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
               <Link
-                to="/blog"
+                to="/"
                 className="hover:text-secondary transition-colors"
               >
                 Blog
               </Link>
               <span>/</span>
               <Link
-                to={`/blog/categoria/${categorySlug}`}
+                to={`/categoria/${categorySlug}`}
                 className="hover:text-secondary transition-colors"
               >
                 {article.category}

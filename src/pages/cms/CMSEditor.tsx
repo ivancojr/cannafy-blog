@@ -135,7 +135,7 @@ export default function CMSEditor() {
           <div className="flex items-center gap-2">
             {published && slug && (
               <Button variant="outline" asChild className="rounded-xl">
-                <Link to={`/blog/artigo/${slug}`} target="_blank"><Eye className="h-4 w-4 mr-2" />Ver</Link>
+                <Link to={`/artigo/${slug}`} target="_blank"><Eye className="h-4 w-4 mr-2" />Ver</Link>
               </Button>
             )}
             <Button variant="outline" onClick={() => handleSave(false)} disabled={isSaving} className="rounded-xl">
