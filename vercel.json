@@ -1,0 +1,17 @@
+{
+  "routes": [
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/(favicon\\.ico|favicon\\.svg|cannafy-logo-green\\.svg|robots\\.txt|og-default\\.png)", "dest": "/$1" },
+    { "src": "/api/og", "dest": "/api/og.ts" },
+    {
+      "src": "/blog/artigo/(.*)",
+      "has": [{
+        "type": "header",
+        "key": "user-agent",
+        "value": ".*(facebookexternalhit|Twitterbot|LinkedInBot|Googlebot|bingbot|Slackbot|WhatsApp|TelegramBot|Discordbot|Pinterestbot|Applebot|DuckDuckBot).*"
+      }],
+      "dest": "/api/og?slug=$1"
+    },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
